@@ -1,0 +1,33 @@
+.dash-appbar
+  position: fixed
+  top: 0
+  left: 85px
+  height: 70px
+  width: calc(100vw - 85px)
+  padding: 0 var(--p-2)
+  border-bottom: 2px solid var(--color-grey)
+  background-color: var(--color-primary)
+  z-index: var(--z-9)
+
+  &__menu
+    display: flex
+    flex-direction: row
+    align-items: center
+    height: 100%
+
+  &__item
+    height: 100%
+    border-bottom: 3px solid transparent
+    line-height: 67px
+    font-size: var(--font-lg)
+    cursor: pointer
+    margin: 0 var(--m-2)
+    color: var(--text-secondary)
+
+  &__item.selected
+    border-bottom: 3px solid var(--color-blue-dark)
+
+.dash-appbar__item.selected,
+.dash-appbar__item:hover
+  font-weight: var(--weight-medium)
+  color: var(--color-white)

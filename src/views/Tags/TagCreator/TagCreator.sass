@@ -1,0 +1,56 @@
+
+.dash-tag-creator
+  padding: 40px 50px
+  width: 40vw
+
+  &__heading
+    font-size: var(--font-xxl)
+    padding-bottom: var(--p-3)
+    border-bottom: 1px solid var(--color-grey-light)
+
+.dash-tag-creator__heading,
+.dash-tag-creator__title
+  font-weight: var(--weight-medium)
+  color: var(--text-primary)
+
+  &
+    font-size: var(--font-xl)
+    padding: var(--p-4) 0
+    margin-bottom: var(--m-2)
+
+.dash-tag-creator__error
+  color: var(--color-red)
+  font-size: var(--font-sm)
+  font-weight: var(--weight-medium)
+  padding: var(--p-1)
+  border-radius: 4px
+  background-color: rgba(211, 47, 47, .2)
+
+.dash-tag-creator__color-picker
+  display: flex
+  fle-direction: row
+  margin: var(--m-2) 0
+  position: relative
+  justify-content: space-between
+  width: 100%
+  padding: var(--p-1) 0
+
+  & .color-picker__title
+    font-size: var(--font-sm)
+    color: var(--text-primary)
+
+  & .color-picker__color-view
+    position: relative
+    display: block
+    width: 100px
+    height: 40px
+    border-radius: 8px
+    cursor: pointer
+
+  & .color-picker__color-view .sketch-picker
+    position: absolute
+    left: -80px
+    top: 50px
+
+.dash-tag-creator .dash-buttons
+  margin-top: var(--m-4)

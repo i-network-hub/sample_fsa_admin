@@ -1,0 +1,41 @@
+
+.dash-shot-selector__input
+  display: block
+  width: 100px
+  height: 100px
+  background-color: var(--color-grey)
+  border-radius: 8px
+  position: relative
+
+  & i
+    display: block
+    width: 100px
+    height: 100px
+    text-align: center
+    line-height: 100px
+    font-size: var(--font-lg)
+    cursor: pointer
+    z-index: 1
+
+  & input
+    position: absolute
+    top: 0
+    bottom: 0
+    display: block
+    width: 100px
+    height: 100px
+    opacity: 0
+    z-index: 2
+    cursor: pointer
+
+.dash-shot-selector .cropper-wrapper
+  margin: 0 auto
+
+  & .ReactCrop
+    display: inline-block
+
+  & .ReactCrop img
+    display: block
+    margin: 0 auto
+    width: auto
+    max-height: calc(90vh - 200px)

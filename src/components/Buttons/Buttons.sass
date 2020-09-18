@@ -1,0 +1,105 @@
+.dash-buttons
+  position: relative
+  font-family: var(--font-family)
+  background-color: red
+  border-radius: 8px
+  overflow: hidden
+
+  &__spinner
+    display: none
+    overfow: hidden
+    border-radius: 8px
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: var(--color-blue)
+    padding: var(--p-2)
+
+  &--loading .dash-buttons__spinner
+    display: flex
+
+  & button
+    display: block
+    border: none
+    border-radius: 8px
+    cursor: pointer
+    margin: 0
+    padding: 0
+    -webkit-transition: all .24s ease-in-out
+    transition: all .24s ease-in-out
+
+.dash-buttons button:active,
+.dash-buttons button:focus
+  outline: none
+
+.dash-buttons button:hover
+  -webkit-filter: brightness(var(--hover))
+  filter: brightness(var(--hover))
+
+.dash-buttons button:active
+  -webkit-filter: brightness(var(--active))
+  filter: brightness(var(--active))
+
+.dash-buttons--default button
+  border-radius: 4px
+  font-size: var(--font-sm)
+  padding: var(--p-2) var(--p-3)
+
+.dash-buttons--small button
+  font-size: var(--font-xs)
+  border-radius: 4px
+  padding: 11px 16px
+
+.dash-buttons--small .dash-buttons__spinner svg
+  width: 15px
+  height: 15px
+
+.dash-buttons--medium button
+  font-size: var(--font-sm)
+  border-radius: 4px
+  padding: var(--p-2) var(--p-3)
+
+.dash-buttons--medium .dash-buttons__spinner svg
+  width: 20px
+  height: 20px
+
+.dash-buttons--large button
+  font-size: var(--font-lg)
+  border-radius: 4px
+  padding: var(--p-2) var(--p-3)
+
+.dash-buttons--large .dash-buttons__spinner svg
+  width: 25px
+  height: 25px
+
+.dash-buttons--primary,
+.dash-buttons--primary button
+  background-color: var(--color-blue)
+
+  &
+    color: var(--color-white)
+
+.dash-buttons--secondary,
+.dash-buttons--secondary button
+  background-color: var(--color-grey)
+
+  &
+    color: var(--color-white)
+
+.dash-buttons--danger,
+.dash-buttons--danger button
+  background-color: var(--color-red)
+
+  &
+    color: var(--color-white)
+
+.dash-buttons--success,
+.dash-buttons--success button
+  background-color: var(--color-green)
+
+  &
+    color: var(--color-white)
+
+.dash-buttons--fluid,
+.dash-buttons--fluid button
+  width: 100%

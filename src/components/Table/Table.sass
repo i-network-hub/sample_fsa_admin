@@ -1,0 +1,52 @@
+
+.dash-table
+  width: 100%
+  border-radius: 8px
+  padding: var(--p-2) 0
+
+.dash-table table,
+.dash-table thead
+  width: 100%
+
+  & th
+    font-size: var(--font-sm)
+    text-align: left
+    padding: var(--p-2) var(--p-1) var(--p-4) var(--p-1)
+
+  & th:first-child
+    padding-left: var(--p-4)
+    width: 100px
+
+.dash-table tbody tr:nth-child(2n)
+  background-color: #2c3134
+
+.dash-table tbody td
+  min-height: 70px
+  font-size: var(--font-sm)
+  font-weight: var(--weight-regular)
+  padding: var(--p-1) var(--p-1)
+  border: collapse
+
+  &:first-child
+    padding-left: var(--p-4)
+
+  & .dash-avatar
+    width: 50px
+
+.dash-table tbody .dash-table__type,
+.dash-table tbody .dash-table__username
+  display: block
+
+  &
+    font-size: var(--font-lg)
+
+.dash-table tbody .dash-table__type
+  margin-top: 8px
+  font-size: var(--font-sm)
+  color: var(--color-grey-light)
+
+.dash-table tbody .dash-table-icon
+  cursor: pointer
+  font-size: var(--font-sm)
+  text-decoration: none
+  color: var(--color-white)

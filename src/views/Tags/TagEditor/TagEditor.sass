@@ -1,0 +1,65 @@
+
+.dash-tag-editor
+  padding: 40px 50px 60px
+  width: 40vw
+  min-height: 90vh
+
+  &__heading
+    font-size: var(--font-xxl)
+    padding-bottom: var(--p-3)
+    border-bottom: 1px solid var(--color-grey-light)
+
+.dash-tag-editor__heading,
+.dash-tag-editor__title
+  font-weight: var(--weight-medium)
+  color: var(--text-primary)
+
+  &
+    font-size: var(--font-xl)
+    padding: var(--p-4) 0
+
+.dash-tag-editor .dash-form-text-field,
+.dash-tag-editor__title
+  margin-bottom: var(--m-2)
+
+.dash-tag-editor__color-picker
+  display: flex
+  fle-direction: row
+  margin: var(--m-2) 0
+  position: relative
+  justify-content: space-between
+  width: 100%
+  padding: var(--p-1) 0
+  z-index: 9999
+
+.dash-tag-editor .color-picker__title
+  font-size: var(--font-sm)
+  color: var(--text-primary)
+
+.dash-tag-editor .color-picker__color-view
+  position: relative
+  display: block
+  width: 100px
+  height: 40px
+  border-radius: 8px
+  cursor: pointer
+
+  & .sketch-picker
+    position: absolute
+    left: -80px
+    top: 50px
+
+.dash-tag-editor__delete
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  position: absolute
+  right: 16px
+  bottom: 16px
+  background-color: var(--color-red)
+  border-radius: 50%
+  color: var(--color-white)
+  width: 50px
+  height: 50px

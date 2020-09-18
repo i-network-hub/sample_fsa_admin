@@ -1,0 +1,48 @@
+
+.dash-radio
+  display: inline-block
+  height: 20px
+  position: relative
+  background-color: var(--color-black)
+  display: flex
+  flex-direction: row
+  align-item: center
+
+  &__option
+    margin-right: 16px
+
+  &__option:last-child
+    margin-right: 0
+
+  & input
+    opacity: 0
+    pointer-events: none
+    z-index: -1
+    display: none
+
+  & label
+    display: flex
+    flex-direction: row
+    flex-wrap: no-wrap
+    align-items: center
+    position: relative
+    height: 20px
+    cursor: pointer
+    font-size: var(--font-md)
+
+  & label:before
+    display: inline-block
+    content: ""
+    cursor: pointer
+    transiiton: all .24s ease-in-out
+    border: 2px solid var(--color-blue)
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    margin-right: 8px
+
+  & input:checked+label:before
+    background-color: var(--color-blue)
+
+  & input:checked+label
+    color: var(--color-white)

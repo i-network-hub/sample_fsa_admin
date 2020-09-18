@@ -1,0 +1,48 @@
+
+.dash-range
+  display: flex
+  flex-direction: row
+  flex-wrap: no-wrap
+  align-item: center
+  justify-content: space-between
+  background-color: var(--color-grey)
+  border-radius: 8px
+  padding: 0 var(--p-2)
+
+.dash-range__from,
+.dash-range__to
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.dash-range__from input,
+.dash-range__from label,
+.dash-range__to input,
+.dash-range__to label
+  display: inline-block
+
+.dash-range__from span,
+.dash-range__to span
+  font-size: var(--font-md)
+  font-weight: var(--weight-medium)
+  color: var(--color-grey-light)
+  padding: var(--p-2) 0
+
+.dash-range__from input,
+.dash-range__to input
+  width: 100%
+  background-color: var(--color-grey)
+  border: none
+  border-radius: 8px
+  padding: var(--p-2)
+  color: var(--color-white)
+  font-weight: var(--weight-medium)
+
+.dash-range__from input:active,
+.dash-range__from input:focus,
+.dash-range__to input:active,
+.dash-range__to input:focus
+  outline: none
+
+.dash-range__from
+  margin-right: var(--m-2)

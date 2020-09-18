@@ -1,0 +1,54 @@
+.dash-card
+  display: inline-block
+  width: auto
+  height: auto
+  padding: var(--p-2)
+  background-color: inherit
+  margin: var(--m-2)
+  -webkit-transition: all .24s ease-in-out
+  transition: all .24s ease-in-out
+
+  &--rounded
+    border-radius: 16px
+
+  &--bordered
+    border: 2px solid var(--color-grey)
+
+  &--hover
+    cursor: pointer
+
+  &--hover:hover
+    box-shadow: 0 40px 30px -30px rgba(0, 0, 0, .6), 0 0 40px 0 rgba(0, 0, 0, .08)
+    border: 2px solid transparent
+
+  &__medium
+    width: 250px
+    padding: var(--p-4)
+
+  &__icon
+    width: 50px
+    height: 50px
+    text-align: center
+    line-height: 50px
+    border-radius: 50%
+    font-size: var(--font-xl)
+    background-color: var(--color-grey)
+
+  &__icon i
+    -webkit-transition: all .24s ease-in-out
+    transition: all .24s ease-in-out
+
+  &__heading
+    margin: var(--m-2) 0
+    color: var(--color-white)
+    font-weight: var(--weight-medium)
+    line-height: 18px
+
+.dash-card__heading,
+.dash-card__text
+  font-size: var(--font-sm)
+  text-align: center
+
+  &
+    color: var(--text-secondary)
+    margin: var(--m-1) 0
